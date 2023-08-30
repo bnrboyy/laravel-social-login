@@ -32,9 +32,15 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => '',
-        'client_secret' => '',
-        'redirect' => env('APP_URL') . '/facebook/callback/',
+        'client_id' => env('FACEBOOK_CLIENT_ID'),
+        'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
+        'redirect' => 'http://localhost:8000/facebook/callback',
+    ],
+
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect' => 'http://127.0.0.1:8000/google/callback',
     ],
 
 ];
